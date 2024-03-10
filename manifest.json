@@ -1,0 +1,33 @@
+{
+  "manifest_version": 2,
+  "name": "YouTube Offline",
+  "description": "Download YouTube Videos without YouTube Premium",
+  "author": "Dinoscape",
+  "version": "0.1",
+  "browser_action": {
+    "default_icon": "icons/128x128.png",
+    "default_popup": "popup.html",
+    "default_title": "YouTube Offline"
+  },
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  },
+  "permissions": ["activeTab", "contextMenus", "<all_urls>"],
+  "commands": {
+    "downloadVideoCommand": {
+      "suggested_key": {
+        "default": "Alt+Y"
+      },
+      "description": "A lightweight YouTube video downloader enabling offline viewing of your favorite content"
+    }
+  },
+  "icons": {
+    "16": "icons/16x16.png",
+    "19": "icons/19x19.png",
+    "32": "icons/32x32.png",
+    "38": "icons/38x38.png",
+    "48": "icons/48x48.png",
+    "128": "icons/128x128.png"
+  }
+}
